@@ -32,30 +32,16 @@
   position: relative;
   /* overflow: hidden; */
   background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 0) 45%,
+    180deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  background-size: 250% 100%;
-  background-position: 100%;
+  background-size: 100% 200%;
+  background-position: 0 100%;
   border-radius: 100px;
   transition: all 0.2s ease-in;
 }
 .links li:hover {
   color: #bbb;
-}
-
-.current {
-  animation: onClick 0.2s forwards;
-}
-
-@keyframes onClick {
-  from {
-    background-position: 100%;
-  }
-  to {
-    background-position: 0%;
-    color: var(--main-bg-color);
-  }
 }

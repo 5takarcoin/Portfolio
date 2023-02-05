@@ -12,6 +12,115 @@ const Navbar = () => {
 
   let sad = true;
 
+  const handleFlowShow = (el, i) => {
+    //onEnter
+    if (i === 0) {
+      gsap.set(el, { backgroundPosition: "0% 100%" });
+      gsap.to(el, { backgroundPosition: "0 0%", duration: 0.2 });
+
+      gsap.to(el, { color: "black", duration: 0.2 });
+    }
+    //onEnterBack
+    if (i === 1) {
+      gsap.set(el, { backgroundPosition: "0% -100%" });
+      gsap.to(el, { backgroundPosition: "0 0%", duration: 0.2 });
+
+      gsap.to(el, { color: "black", duration: 0.2 });
+    }
+    //onLeave
+    if (i === 2) {
+      gsap.set(el, { backgroundPosition: "0% 0%" });
+      gsap.to(el, { backgroundPosition: "0 -100%", duration: 0.2 });
+
+      gsap.to(el, { color: "white", duration: 0.2 });
+    }
+    //onLeaveBack
+    if (i === 3) {
+      gsap.set(el, { backgroundPosition: "0% 0%" });
+      gsap.to(el, { backgroundPosition: "0 100%", duration: 0.2 });
+
+      gsap.to(el, { color: "white", duration: 0.2 });
+    }
+  };
+
+  const animScroll = () => {
+    ScrollTrigger.create({
+      trigger: ".hero",
+      start: "-1 top",
+      end: () => `+=${innerHeight / 2}`,
+
+      onEnter: () => {
+        handleFlowShow(topLink.current, 0);
+      },
+      onEnterBack: () => {
+        handleFlowShow(topLink.current, 1);
+      },
+      onLeave: () => {
+        handleFlowShow(topLink.current, 2);
+      },
+      onLeaveBack: () => {
+        handleFlowShow(topLink.current, 3);
+      },
+      duration: 0.1,
+    });
+    ScrollTrigger.create({
+      trigger: ".aboutContainer",
+      start: "-1 top",
+      end: () => `+=${innerHeight / 2}`,
+
+      onEnter: () => {
+        handleFlowShow(aboutLink.current, 0);
+      },
+      onEnterBack: () => {
+        handleFlowShow(aboutLink.current, 1);
+      },
+      onLeave: () => {
+        handleFlowShow(aboutLink.current, 2);
+      },
+      onLeaveBack: () => {
+        handleFlowShow(aboutLink.current, 3);
+      },
+      duration: 0.1,
+    });
+    ScrollTrigger.create({
+      trigger: ".projects",
+      start: "-1 top",
+      end: () => `+=${innerHeight / 2}`,
+
+      onEnter: () => {
+        handleFlowShow(projectsLink.current, 0);
+      },
+      onEnterBack: () => {
+        handleFlowShow(projectsLink.current, 1);
+      },
+      onLeave: () => {
+        handleFlowShow(projectsLink.current, 2);
+      },
+      onLeaveBack: () => {
+        handleFlowShow(projectsLink.current, 3);
+      },
+      duration: 0.1,
+    });
+    ScrollTrigger.create({
+      trigger: ".contact",
+      start: "-1 top",
+      end: () => `+=${innerHeight / 2}`,
+      onEnter: () => {
+        handleFlowShow(contactLink.current, 0);
+      },
+      onEnterBack: () => {
+        handleFlowShow(contactLink.current, 1);
+      },
+      onLeave: () => {
+        handleFlowShow(contactLink.current, 2);
+      },
+      onLeaveBack: () => {
+        handleFlowShow(contactLink.current, 3);
+      },
+      duration: 0.1,
+    });
+  };
+
   const scroll = () => {
     const para = gsap
       .timeline({ defaults: { duration: 1 } })
@@ -24,44 +133,9 @@ const Navbar = () => {
       start: "top top",
       snap: {
         snapTo: 1 / 4,
-        duration: 0.3,
+        duration: 0.5,
         ease: "power3.easeIn",
       },
-    });
-    ScrollTrigger.create({
-      trigger: ".hero",
-      start: "49% center",
-      end: () => `+=${innerHeight / 2}`,
-
-      onEnter: showTop,
-      onEnterBack: showTop,
-      duration: 0.1,
-    });
-    ScrollTrigger.create({
-      trigger: ".aboutContainer",
-      start: "49% center",
-      end: () => `+=${innerHeight / 2}`,
-
-      onEnter: showAbout,
-      onEnterBack: showAbout,
-      duration: 0.1,
-    });
-    ScrollTrigger.create({
-      trigger: ".projects",
-      start: "49% center",
-      end: () => `+=${innerHeight / 2}`,
-
-      onEnter: showProjects,
-      onEnterBack: showProjects,
-      duration: 0.1,
-    });
-    ScrollTrigger.create({
-      trigger: ".contact",
-      start: "49% center",
-      end: () => `+=${innerHeight / 2}`,
-      onEnter: showContact,
-      onEnterBack: showContact,
-      duration: 0.1,
     });
   };
 
@@ -119,7 +193,9 @@ const Navbar = () => {
     top = document.getElementsByClassName("hero")[0];
 
     if (sad) {
-      showTop();
+      // showTop();
+
+      animScroll();
       scroll();
       sad = false;
     }

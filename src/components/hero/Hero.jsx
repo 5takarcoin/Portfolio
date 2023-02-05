@@ -27,16 +27,16 @@ const Hero = () => {
     timeline
       .set("body", { overflowY: "hidden" })
       .set(".slider", { xPercent: 0 })
+      .set(".anotherImg", { scale: 1.3 })
       .set(".socials li", { opacity: 0, xPercent: -250 })
       .set(".navi li", { opacity: 0, xPercent: 250 })
-
       .set(".image", {
         visibility: "hidden",
         width: "0vw",
         mixBlendMode: "normal",
         objectPosition: "bottom",
       })
-      .set(".name", { fontSize: "14vw", height: 0, ease: "easeIn" })
+      .set(".name", { fontSize: "9.8vw", height: 0, ease: "easeIn" })
       .to(".slider", { yPercent: -100 })
       .to(".name", { height: "auto", ease: "easeIn" })
       .to(".nameAnv", {
@@ -52,7 +52,7 @@ const Hero = () => {
         delay: -0.5,
         ease: "expo",
       })
-
+      .to(".anotherImg", { scale: 1, delay: -0.5 })
       .to(".image", {
         x: 0,
         width: "20vw",
@@ -60,7 +60,6 @@ const Hero = () => {
         delay: -0.5,
         visibility: "visible",
       })
-      .to(".outinhero", { marginLeft: "5vw", ease: "easeOut", delay: -0.7 })
       .to(".job", { x: 0, opacity: 1, stagger: 0.1 })
       .to(".navi li", {
         opacity: 1,
