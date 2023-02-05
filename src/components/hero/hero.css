@@ -1,0 +1,99 @@
+.heroImg {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 300vh;
+  background: black;
+}
+
+.anotherImg {
+  position: fixed;
+  top: 0;
+  height: 300%;
+  width: 400%;
+
+  background-repeat: repeat !important;
+  background-size: 6%;
+  background-position: 0 !important;
+  background-image: radial-gradient(
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 20%
+    ),
+    url(./another.png);
+  filter: contrast(0.8);
+  mix-blend-mode: difference;
+  /* filter: invert(1); */
+  opacity: 1;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outinhero {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-family: var(--heading-font);
+  /* font-size: calc(2 * var(--header-size)); */
+  font-size: 14vw;
+  font-size: 8.2vw;
+  overflow: hidden;
+}
+
+.job {
+  color: var(--main-text-color);
+  font-family: var(--heading-font);
+  font-size: var(--link-size);
+  mix-blend-mode: difference;
+  opacity: 0;
+  margin-bottom: 1rem;
+  transform: translateX(20vw);
+}
+
+.heroCenter {
+  margin: auto;
+  width: 50vw;
+  height: 60vh;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroCenter .text {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  mix-blend-mode: difference;
+  z-index: 103;
+}
+
+.nameContainer {
+  margin-top: 5vw;
+}
+.heroCenter .image {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 102;
+  height: 40vh;
+}
+
+.jobs {
+  z-index: 101;
+  width: 20vw;
+  overflow: hidden;
+}

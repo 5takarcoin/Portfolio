@@ -1,0 +1,72 @@
+.contact {
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--heading-font);
+  color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactForm {
+  z-index: 500;
+  width: 50vw;
+  padding: 5rem;
+  box-shadow: inset rgba(0, 0, 0, 0.4) 0px 7px 29px 0px;
+}
+
+.contactForm h1 {
+  margin: 1rem 0 3rem 0;
+  padding: 0 1rem;
+  border-left: 1rem solid white;
+  color: tomato;
+  font-size: var();
+}
+
+.contactForm__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: var(--link-size);
+}
+
+.contactForm label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactForm label span {
+  width: 10vw;
+  padding: 0.2rem;
+}
+
+.con_name {
+  align-items: center;
+}
+.con_name input {
+  font-family: var(--heading-font);
+  font-size: var(--link-size);
+  padding: 0.5rem 1rem;
+  flex-grow: 1;
+  outline: none;
+}
+textarea {
+  font-family: consolas;
+  padding: 0.5rem 1rem;
+  flex-grow: 1;
+  resize: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contactForm button {
+  width: 30%;
+  align-self: end;
+  font-family: var(--heading-font);
+  padding: 0.5rem;
+  border-radius: 100px;
+  margin: 1rem 0;
+  font-size: var(--link-size);
+  /* font-weight: bold; */
+}
