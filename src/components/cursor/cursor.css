@@ -1,0 +1,19 @@
+.cursor {
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+  z-index: 999;
+  border: 2px solid white;
+  position: fixed;
+  transform-origin: center center;
+  margin-left: -20px;
+  margin-top: -20px;
+  /* transition: all 0.1s ease-in-out; */
+  background-color: white;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.App {
+  cursor: none;
+}

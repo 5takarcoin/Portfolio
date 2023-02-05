@@ -47,7 +47,7 @@ const Navbar = () => {
     ScrollTrigger.create({
       trigger: ".hero",
       start: "-1 top",
-      end: () => `+=${innerHeight / 2}`,
+      end: () => `+=${innerHeight - 1}`,
 
       onEnter: () => {
         handleFlowShow(topLink.current, 0);
@@ -66,7 +66,7 @@ const Navbar = () => {
     ScrollTrigger.create({
       trigger: ".aboutContainer",
       start: "-1 top",
-      end: () => `+=${innerHeight / 2}`,
+      end: () => `+=${innerHeight - 1}`,
 
       onEnter: () => {
         handleFlowShow(aboutLink.current, 0);
@@ -85,7 +85,7 @@ const Navbar = () => {
     ScrollTrigger.create({
       trigger: ".projects",
       start: "-1 top",
-      end: () => `+=${innerHeight / 2}`,
+      end: () => `+=${innerHeight - 1}`,
 
       onEnter: () => {
         handleFlowShow(projectsLink.current, 0);
@@ -104,7 +104,7 @@ const Navbar = () => {
     ScrollTrigger.create({
       trigger: ".contact",
       start: "-1 top",
-      end: () => `+=${innerHeight / 2}`,
+      end: () => `+=${innerHeight - 1}`,
       onEnter: () => {
         handleFlowShow(contactLink.current, 0);
       },
@@ -161,29 +161,15 @@ const Navbar = () => {
     // showContact();
   };
 
-  const showTop = () => {
-    projectsLink.current.classList.remove("current");
-    topLink.current.classList.add("current");
-    contactLink.current.classList.remove("current");
-    aboutLink.current.classList.remove("current");
-  };
-  const showAbout = () => {
-    projectsLink.current.classList.remove("current");
-    aboutLink.current.classList.add("current");
-    contactLink.current.classList.remove("current");
-    topLink.current.classList.remove("current");
-  };
-  const showProjects = () => {
-    projectsLink.current.classList.add("current");
-    aboutLink.current.classList.remove("current");
-    contactLink.current.classList.remove("current");
-    topLink.current.classList.remove("current");
-  };
-  const showContact = () => {
-    projectsLink.current.classList.remove("current");
-    aboutLink.current.classList.remove("current");
-    contactLink.current.classList.add("current");
-    topLink.current.classList.remove("current");
+  const pulse = () => {
+    const tl = new gsap.timeline({ repeat: -1, repeatDelay: 2 });
+    tl.to(".socials", 1, {
+      scale: 1.5,
+      opacity: 1,
+      ease: Linear.easeNone,
+      repeat: 1,
+      yoyo: true,
+    });
   };
 
   useEffect(() => {
@@ -193,10 +179,9 @@ const Navbar = () => {
     top = document.getElementsByClassName("hero")[0];
 
     if (sad) {
-      // showTop();
-
       animScroll();
       scroll();
+      // pulse();
       sad = false;
     }
   }, []);
@@ -212,18 +197,26 @@ const Navbar = () => {
       </div>
       <div className="navi">
         <ul className="links">
-          <li ref={topLink} onClick={goTop}>
-            Top<span></span>
-          </li>
-          <li ref={aboutLink} onClick={goAbout}>
-            About<span></span>
-          </li>
-          <li ref={projectsLink} onClick={goProjects}>
-            Projects<span></span>
-          </li>
-          <li ref={contactLink} onClick={goContact}>
-            Contact<span></span>
-          </li>
+          <div className="lili">
+            <li ref={topLink} onClick={goTop}>
+              Top<span></span>
+            </li>
+          </div>
+          <div className="lili">
+            <li ref={aboutLink} onClick={goAbout}>
+              About<span></span>
+            </li>
+          </div>
+          <div className="lili">
+            <li ref={projectsLink} onClick={goProjects}>
+              Projects<span></span>
+            </li>
+          </div>
+          <div className="lili">
+            <li ref={contactLink} onClick={goContact}>
+              Contact<span></span>
+            </li>
+          </div>
         </ul>
       </div>
     </div>

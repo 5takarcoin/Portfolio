@@ -69,4 +69,5 @@ textarea {
   margin: 1rem 0;
   font-size: var(--link-size);
   /* font-weight: bold; */
+  cursor: pointer;
 }

@@ -40,8 +40,8 @@ const About = () => {
                     Node<span className="fontFix">.</span>js
                   </li>
                   <li>Express</li>
-                  <li>Firebase</li>
                   <li>MongoDB</li>
+                  <li>Firebase</li>
                 </div>
               </div>
               <div className="side version">

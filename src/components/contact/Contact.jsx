@@ -2,6 +2,10 @@ import React from "react";
 import "./contact.css";
 
 const Contact = () => {
+  const sendMessage = (e) => {
+    e.preventDefault();
+    alert("nice");
+  };
   const show = (e) => {
     e.preventDefault();
     console.log(
@@ -22,7 +26,7 @@ const Contact = () => {
             <span>Message</span>
             <textarea name="" id="" cols="30" rows="10"></textarea>
           </label>
-          <button>Send</button>
+          <button onClick={(e) => sendMessage(e)}>Send</button>
         </form>
       </div>
     </div>

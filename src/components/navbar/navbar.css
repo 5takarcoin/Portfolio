@@ -40,8 +40,4 @@
   background-size: 100% 200%;
   background-position: 0 100%;
   border-radius: 100px;
-  transition: all 0.2s ease-in;
-}
-.links li:hover {
-  color: #bbb;
 }
