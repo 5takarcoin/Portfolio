@@ -32,9 +32,13 @@
 }
 
 .fontFix {
+  font-family: var(--another-font);
+  font-size: calc(var(--link-size) * 0.8);
+}
+/* .fontFix {
   font-family: consolas;
   font-size: calc(var(--desc-size) * 0.4);
-}
+} */
 
 .skillT {
   font-weight: bold;
@@ -48,7 +52,7 @@
 }
 
 .inSkillT {
-  margin: 0 4rem;
+  margin: 2rem 7rem;
   padding: 0 2rem;
   border-left: 1rem solid white;
 }
@@ -65,11 +69,17 @@
 }
 
 .fixLg {
-  font-family: consolas;
+  font-family: var(--another-font);
   font-size: var(--desc-size);
   color: var(--main-text-color);
   font-weight: bold;
 }
+/* .fixLg {
+  font-family: consolas;
+  font-size: var(--desc-size);
+  color: var(--main-text-color);
+  font-weight: bold;
+} */
 
 .side {
   position: relative;
@@ -86,16 +96,20 @@
   align-items: end;
   justify-content: center;
   transform: rotate(-90deg);
+
+  font-size: calc(var(--text-size) * 0.8);
 }
 
 .version .type {
   transform: rotate(0);
   align-items: center;
+  justify-content: end;
+  padding: 0 1.2rem;
   height: auto;
 }
 
 .smtype {
-  font-size: 0.8rem;
+  font-size: calc(var(--text-size) * 0.7);
 }
 
 .inType {

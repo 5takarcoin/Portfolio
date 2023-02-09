@@ -20,7 +20,6 @@ const Cursor = ({ point }) => {
   }, []);
 
   useEffect(() => {
-    console.log(cursor.current, mousePos);
     if (Date.now() - ye > 100) {
       cursor.current.style.top = mousePos.y + "px";
       cursor.current.style.left = mousePos.x + "px";

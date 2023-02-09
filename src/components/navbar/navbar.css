@@ -41,3 +41,14 @@
   background-position: 0 100%;
   border-radius: 100px;
 }
+
+.socials li {
+  cursor: pointer;
+  font-size: var(--desc-size);
+  padding: 0.5rem;
+}
+
+li {
+  text-decoration: none;
+  color: white;
+}

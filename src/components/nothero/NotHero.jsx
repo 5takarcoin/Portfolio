@@ -12,8 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 const NotHero = () => {
   return (
     <div className="notHero">
-      {/* <div className="heroImg"></div>
-      <div className="anotherImg"></div> */}
       <About />
       <Projects />
       <Contact />

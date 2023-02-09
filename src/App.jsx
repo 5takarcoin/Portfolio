@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <div className="inApp">
         <div className="slider"></div>
-        {/* <Cursor point={mousePos} /> */}
         <Cursor />
         <Hero />
         <NotHero />

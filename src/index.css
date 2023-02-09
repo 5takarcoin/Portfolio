@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +29,9 @@ body {
   --title-size: calc(var(--multiplier) * 4rem);
   --header-size: calc(var(--multiplier) * 8rem);
 
-  --heading-font: norm, serif;
+  /* --heading-font: norm, serif; */
+  --another-font: "Montserrat", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
 }
 
 .my__flex {
@@ -45,7 +49,6 @@ body {
   border-bottom: 0.2rem solid var(--main-text-color);
   margin-top: 5rem;
   font-weight: bold;
-  z-index: 1;
 }
 
 .my__links {

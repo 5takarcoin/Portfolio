@@ -85,7 +85,7 @@ const Navbar = () => {
     ScrollTrigger.create({
       trigger: ".projects",
       start: "-1 top",
-      end: () => `+=${innerHeight - 1}`,
+      end: () => `+=${innerHeight * 3 - 1}`,
 
       onEnter: () => {
         handleFlowShow(projectsLink.current, 0);
@@ -132,7 +132,7 @@ const Navbar = () => {
       scrub: true,
       start: "top top",
       snap: {
-        snapTo: 1 / 4,
+        snapTo: 1 / 6,
         duration: 0.5,
         ease: "power3.easeIn",
       },
@@ -189,10 +189,24 @@ const Navbar = () => {
     <div className="navbar">
       <div className="socials">
         <ul className="links">
-          <li>GitHub</li>
-          <li>Twitter</li>
-          <li>LinkedIn</li>
-          <li>Itch</li>
+          <a href="https://github.com/5takarcoin" target="_blank">
+            <li>
+              <i class="fa-brands fa-github"></i>
+            </li>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tanvir-hasan-tutul-7a5452261/"
+            target="_blank"
+          >
+            <li>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </li>
+          </a>
+          <a href="https://itch.io/dashboard" target="_blank">
+            <li>
+              <i class="fa-brands fa-itch-io"></i>
+            </li>
+          </a>
         </ul>
       </div>
       <div className="navi">

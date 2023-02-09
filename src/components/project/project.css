@@ -1,0 +1,109 @@
+.project {
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--heading-font);
+  color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectContainer {
+  z-index: 500;
+  width: 60vw;
+  height: 80vh;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.projectContainer h1 {
+  margin: 2rem 0;
+  padding: 0 1rem;
+  border-left: 1rem solid white;
+  color: tomato;
+  font-size: var();
+}
+
+.projectContent {
+  flex: 1;
+  margin-top: -1rem;
+  display: flex;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.pictures {
+  margin: 2rem 2rem 2rem 3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.picture {
+  flex-grow: 1;
+}
+
+.proDesc {
+  padding: 2vw;
+  flex: 1;
+  font-family: var(--another-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+
+.shortDesc {
+  margin-top: 2vw;
+  font-size: var(--link-size);
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 0.5rem 3rem;
+  font-size: var(---size);
+  border-radius: 100px;
+  border: none;
+  font-family: var(--heading-font);
+  font-size: calc(var(--text-size) * 0.9);
+  cursor: pointer;
+}
+
+.project li {
+  padding: 0.2rem 0.5rem;
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.ultitle {
+  border-left: 0.2rem solid white;
+  padding: 0rem 1rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.features {
+  margin-bottom: 2rem;
+}
+
+.detailsDesc p {
+  margin-bottom: 1rem;
+}
+
+.picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

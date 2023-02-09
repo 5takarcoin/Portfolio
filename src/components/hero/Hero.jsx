@@ -37,7 +37,7 @@ const Hero = () => {
         objectPosition: "bottom",
       })
       .set(".name", { fontSize: "9.8vw", height: 0, ease: "easeIn" })
-      .to(".slider", { yPercent: -100 })
+      .to(".slider", { yPercent: -100, delay: 0.5, duration: 0.5 })
       .to(".name", { height: "auto", ease: "easeIn" })
       .to(".nameAnv", {
         color: "black",
