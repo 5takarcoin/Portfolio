@@ -41,9 +41,9 @@ const Projects = () => {
       descd: [
         `See how different sorting methods work. Compare and learn from them.`,
       ],
-      weblink: "#",
-      githublink: "5takarcoin\visualizer",
-      builtwith: ["React", "Sass"],
+      weblink: "https://anv-see-sort.netlify.app/",
+      githublink: "https://github.com/5takarcoin/visualizer",
+      builtwith: ["React", "Sass", "Framer motion"],
       features: [
         "Input or Generate Array",
         "Control Speed",
