@@ -12,9 +12,8 @@ const Projects = () => {
       picture: "https://www.linkpicture.com/q/adacasca.png",
       desct: "A realtime chat app",
       descd: [
-        `Adda, which is the bengali of "chat", is a chatting app.
-      Register, Login and find your friends.`,
-        `Search "tanvir" and start by sending hi to me.`,
+        `Adda, which is the Bengali word for "chat,"  is a chatting app. Register, login, and find your friends.`,
+        `Search for "tanvir" and start by sending me hi`,
       ],
       weblink: "https://adda-6df21.web.app/",
       githublink: "https://github.com/5takarcoin/adda",
@@ -27,7 +26,7 @@ const Projects = () => {
       picture: "https://www.linkpicture.com/q/asasasasa.png",
       desct: "MERN stack Blog Application",
       descd: [
-        `Register, Login and start writing. Can take some time to load, please be patient.`,
+        `Register, Login and start writing. It can take some time to load, so please be patient.`,
       ],
       weblink: "https://blog-anv.netlify.app/",
       githublink: "https://github.com/5takarcoin/blog-api",
@@ -42,8 +41,8 @@ const Projects = () => {
       descd: [
         `See how different sorting methods work. Compare and learn from them.`,
       ],
-      weblink: "https://adda-6df21.web.app/",
-      githublink: "https://github.com/5takarcoin/adda",
+      weblink: "#",
+      githublink: "5takarcoin\visualizer",
       builtwith: ["React", "Sass"],
       features: [
         "Input or Generate Array",

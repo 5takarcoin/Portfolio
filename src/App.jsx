@@ -2,7 +2,7 @@ import "./App.css";
 import NotHero from "./components/nothero/NotHero";
 import Hero from "./components/hero/Hero";
 import Cursor from "./components/cursor/Cursor";
-import { useEffect, useState } from "react";
+import PopupSend from "./components/PopupSend/PopupSend";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Cursor />
         <Hero />
         <NotHero />
+        {/* <PopupSend /> */}
       </div>
     </div>
   );

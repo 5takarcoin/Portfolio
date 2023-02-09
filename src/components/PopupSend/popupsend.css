@@ -1,0 +1,6 @@
+.popup {
+  z-index: 900;
+  width: 50vw;
+  height: 50vh;
+  background-color: red;
+}

@@ -191,7 +191,7 @@ const Navbar = () => {
         <ul className="links">
           <a href="https://github.com/5takarcoin" target="_blank">
             <li>
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </li>
           </a>
           <a
@@ -199,12 +199,12 @@ const Navbar = () => {
             target="_blank"
           >
             <li>
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i className="fa-brands fa-linkedin-in"></i>
             </li>
           </a>
           <a href="https://itch.io/dashboard" target="_blank">
             <li>
-              <i class="fa-brands fa-itch-io"></i>
+              <i className="fa-brands fa-itch-io"></i>
             </li>
           </a>
         </ul>

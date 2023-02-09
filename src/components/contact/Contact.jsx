@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState(``);
+
+  const handleSend = () => {
+    console.log("kisui hobena");
+  };
   const sendMessage = (e) => {
     e.preventDefault();
-    alert("nice");
+    handleSend();
   };
   const show = (e) => {
     e.preventDefault();

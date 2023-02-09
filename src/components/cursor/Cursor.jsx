@@ -13,10 +13,14 @@ const Cursor = ({ point }) => {
     };
 
     window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
+    document.addEventListener(
+      "mouseleave",
+      () => (cursor.current.style.visibility = "hidden")
+    );
+    document.addEventListener(
+      "mouseenter",
+      () => (cursor.current.style.visibility = "visible")
+    );
   }, []);
 
   useEffect(() => {

@@ -22,7 +22,7 @@ const Hero = () => {
       .timeline({
         defaults: { duration: 0.5 },
       })
-      .timeScale(0.8);
+      .timeScale(1);
 
     timeline
       .set("body", { overflowY: "hidden" })
