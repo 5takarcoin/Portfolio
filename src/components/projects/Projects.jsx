@@ -45,9 +45,11 @@ const Projects = () => {
       githublink: "https://github.com/5takarcoin/visualizer",
       builtwith: ["React", "Sass", "Framer motion"],
       features: [
-        "Input or Generate Array",
-        "Control Speed",
-        "Compare Sorting Algorithms",
+        // "Input or Generate Array",
+        "Generate Array",
+        "Watch Bubble Sort",
+        // "Control Speed",
+        // "Compare Sorting Algorithms",
       ],
     },
   ];
