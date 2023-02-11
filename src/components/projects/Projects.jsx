@@ -38,16 +38,16 @@ const Projects = () => {
       name: "SeeSort",
       picture: "https://www.linkpicture.com/q/awdafa.png",
       desct: "Sorting Algorithm Visualizer",
-      descd: [
-        `See how different sorting methods work. Compare and learn from them.`,
-      ],
+      descd: [`See how Bubble Sort works.`],
       weblink: "https://anv-see-sort.netlify.app/",
       githublink: "https://github.com/5takarcoin/visualizer",
       builtwith: ["React", "Sass", "Framer motion"],
       features: [
-        "Input or Generate Array",
-        "Control Speed",
-        "Compare Sorting Algorithms",
+        // "Input or Generate Array",
+        "Generate Array",
+        "Watch Bubble Sort",
+        // "Control Speed",
+        // "Compare Sorting Algorithms",
       ],
     },
   ];

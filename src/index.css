@@ -21,13 +21,14 @@ body {
   --mid-color: tomato;
   --main-text-color: white;
 
-  --multiplier: 0.7;
+  --multiplier: 0.7vw;
 
-  --text-size: calc(var(--multiplier) * 1.8rem);
-  --link-size: calc(var(--multiplier) * 2rem);
-  --desc-size: calc(var(--multiplier) * 3rem);
-  --title-size: calc(var(--multiplier) * 4rem);
-  --header-size: calc(var(--multiplier) * 8rem);
+  --short-size: calc(var(--multiplier) * 1.6);
+  --text-size: calc(var(--multiplier) * 1.8);
+  --link-size: calc(var(--multiplier) * 2);
+  --desc-size: calc(var(--multiplier) * 3);
+  --title-size: calc(var(--multiplier) * 4);
+  --header-size: calc(var(--multiplier) * 8);
 
   /* --heading-font: norm, serif; */
   --another-font: "Montserrat", sans-serif;
@@ -46,8 +47,8 @@ body {
   color: var(--mid-color);
   font-family: var(--heading-font);
   font-size: var(--title-size);
-  border-bottom: 0.2rem solid var(--main-text-color);
-  margin-top: 5rem;
+  border-bottom: 0.2vw solid var(--main-text-color);
+  margin-top: 5vw;
   font-weight: bold;
 }
 
