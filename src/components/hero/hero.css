@@ -50,7 +50,7 @@
   font-size: var(--link-size);
   mix-blend-mode: difference;
   opacity: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
   transform: translateX(20vw);
 }
 
