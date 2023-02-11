@@ -42,7 +42,8 @@
   border-radius: 100px;
 }
 
-.socials li {
+.socials li,
+.pdf {
   cursor: pointer;
   font-size: var(--desc-size);
   padding: 0.5rem;

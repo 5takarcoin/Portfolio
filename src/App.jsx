@@ -10,6 +10,7 @@ function App() {
       <div className="inApp">
         <div className="slider"></div>
         <Cursor />
+        {/* <div className="resume"></div> */}
         <Hero />
         <NotHero />
         {/* <PopupSend /> */}

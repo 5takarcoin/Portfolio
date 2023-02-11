@@ -12,6 +12,19 @@ const Navbar = () => {
 
   let sad = true;
 
+  const downloadPDF = () => {
+    fetch("TANVIR HASAN.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        console.log(fileURL);
+        alink.download = "TANVIR HASAN.pdf";
+        alink.click();
+      });
+    });
+  };
+
   const handleFlowShow = (el, i) => {
     //onEnter
     if (i === 0) {
@@ -207,6 +220,12 @@ const Navbar = () => {
               <i className="fa-brands fa-itch-io"></i>
             </li>
           </a>
+          <li>
+            <i
+              class="fa-sharp fa-solid fa-file-arrow-down"
+              onClick={downloadPDF}
+            ></i>
+          </li>
         </ul>
       </div>
       <div className="navi">

@@ -19,3 +19,9 @@
   background: black;
   z-index: 1000;
 }
+
+.resume {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
