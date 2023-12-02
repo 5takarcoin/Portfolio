@@ -3,6 +3,7 @@ import "./navbar.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import CV from "../../../src/assets/CV.pdf";
 
 const Navbar = () => {
   let about = null;
@@ -221,10 +222,17 @@ const Navbar = () => {
             </li>
           </a>
           <li>
-            <i
-              class="fa-sharp fa-solid fa-file-arrow-down"
-              onClick={downloadPDF}
-            ></i>
+            <a
+              href={CV}
+              className="anchor"
+              download="Tanvir Hasan"
+              target="_blank"
+            >
+              <i
+                class="fa-sharp fa-solid fa-file-arrow-down"
+                //onClick={downloadPDF}
+              ></i>
+            </a>
           </li>
         </ul>
       </div>
